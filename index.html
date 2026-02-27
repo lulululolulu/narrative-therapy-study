@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,10 +14,14 @@
             --text: #2c3e50;
             --text-light: #5a6a7a;
             --border: #e2e8f0;
-            --shadow: 0 2px 8px rgba(0,0,0,0.06);
+            --shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
         }
 
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
         body {
             font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -81,7 +86,9 @@
             border-bottom: 2px solid var(--border);
         }
 
-        section p { margin-bottom: 0.8rem; }
+        section p {
+            margin-bottom: 0.8rem;
+        }
 
         .highlight-box {
             background: #f0f7f5;
@@ -91,7 +98,9 @@
             margin: 1rem 0;
         }
 
-        .highlight-box strong { color: var(--accent); }
+        .highlight-box strong {
+            color: var(--accent);
+        }
 
         ul {
             padding-left: 1.5rem;
@@ -103,7 +112,9 @@
             color: var(--text-light);
         }
 
-        ul li strong { color: var(--text); }
+        ul li strong {
+            color: var(--text);
+        }
 
         .docs-grid {
             display: grid;
@@ -127,12 +138,23 @@
 
         .doc-card:hover {
             border-color: var(--accent);
-            box-shadow: 0 2px 12px rgba(46,125,110,0.12);
+            box-shadow: 0 2px 12px rgba(46, 125, 110, 0.12);
         }
 
-        .doc-icon { font-size: 1.8rem; flex-shrink: 0; }
-        .doc-label { font-weight: 600; font-size: 0.95rem; }
-        .doc-sub { font-size: 0.8rem; color: var(--text-light); }
+        .doc-icon {
+            font-size: 1.8rem;
+            flex-shrink: 0;
+        }
+
+        .doc-label {
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .doc-sub {
+            font-size: 0.8rem;
+            color: var(--text-light);
+        }
 
         .cta-section {
             text-align: center;
@@ -140,7 +162,10 @@
             border: 2px solid var(--accent);
         }
 
-        .cta-section h2 { border-bottom: none; color: var(--accent); }
+        .cta-section h2 {
+            border-bottom: none;
+            color: var(--accent);
+        }
 
         .cta-email {
             display: inline-block;
@@ -155,7 +180,9 @@
             transition: background 0.2s;
         }
 
-        .cta-email:hover { background: #256b5e; }
+        .cta-email:hover {
+            background: #256b5e;
+        }
 
         .detail-grid {
             display: grid;
@@ -178,7 +205,10 @@
             color: var(--text-light);
         }
 
-        .detail-item .value { font-weight: 600; color: var(--text); }
+        .detail-item .value {
+            font-weight: 600;
+            color: var(--text);
+        }
 
         footer {
             text-align: center;
@@ -190,116 +220,147 @@
             margin: 0 auto;
         }
 
-        footer a { color: var(--accent); }
+        footer a {
+            color: var(--accent);
+        }
 
         @media (max-width: 600px) {
-            header { padding: 2rem 1rem; }
-            header h1 { font-size: 1.4rem; }
-            main { padding: 1.5rem 1rem 3rem; }
-            section { padding: 1.5rem; }
-            .docs-grid, .detail-grid { grid-template-columns: 1fr; }
+            header {
+                padding: 2rem 1rem;
+            }
+
+            header h1 {
+                font-size: 1.4rem;
+            }
+
+            main {
+                padding: 1.5rem 1rem 3rem;
+            }
+
+            section {
+                padding: 1.5rem;
+            }
+
+            .docs-grid,
+            .detail-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
+
 <body>
 
-<header>
-    <div class="badge">University of Edinburgh &middot; School of Informatics</div>
-    <h1>Evaluating Innovative Moments (IM) Feedback in AI-Assisted Narrative Therapy</h1>
-    <p>We're looking for participants for a 45-minute online study exploring how AI can support narrative therapy conversations.</p>
-</header>
+    <header>
+        <div class="badge">University of Edinburgh &middot; School of Informatics</div>
+        <h1>Evaluating Innovative Moments (IM) Feedback in AI-Assisted Narrative Therapy</h1>
+        <p>We're looking for participants for a 45-minute online study exploring how AI can support narrative therapy
+            conversations.</p>
+    </header>
 
-<main>
-    <section>
-        <h2>About the Study</h2>
-        <p>This research investigates whether making an AI therapist aware of a client's <strong>Innovative Moments</strong> &mdash; moments of growth or change during a conversation &mdash; leads to a better therapeutic experience.</p>
-        <p>You'll have two short conversations with an AI narrative therapist, each guided by a fictional persona we provide. One conversation uses a standard AI therapist; the other uses a version that detects and responds to growth moments. After each conversation, you'll complete a brief questionnaire about your experience.</p>
-        <div class="highlight-box">
-            <strong>Important:</strong> This is not real therapy. You'll be role-playing a provided fictional scenario, not discussing your own personal issues.
-        </div>
-    </section>
+    <main>
+        <section>
+            <h2>About the Study</h2>
+            <p>This research investigates whether making an AI therapist aware of a client's <strong>Innovative
+                    Moments</strong> &mdash; moments of growth or change during a conversation &mdash; leads to a better
+                therapeutic experience.</p>
+            <p>You'll have two short conversations with an AI narrative therapist, each guided by a fictional persona we
+                provide. One conversation uses a standard AI therapist; the other uses a version that detects and
+                responds to growth moments. After each conversation, you'll complete a brief questionnaire about your
+                experience.</p>
+            <div class="highlight-box">
+                <strong>Important:</strong> This is not real therapy. You'll be role-playing a provided fictional
+                scenario, not discussing your own personal issues.
+            </div>
+        </section>
 
-    <section>
-        <h2>What's Involved</h2>
-        <div class="detail-grid">
-            <div class="detail-item">
-                <div class="label">Duration</div>
-                <div class="value">~45 minutes</div>
-            </div>
-            <div class="detail-item">
-                <div class="label">Format</div>
-                <div class="value">Online, text-based</div>
-            </div>
-            <div class="detail-item">
-                <div class="label">Compensation</div>
-                <div class="value">Voluntary (no payment)</div>
-            </div>
-            <div class="detail-item">
-                <div class="label">Eligibility</div>
-                <div class="value">18+ years, fluent English</div>
-            </div>
-        </div>
-        <p>The study has three parts:</p>
-        <ul>
-            <li><strong>Phase A</strong> &mdash; 15-minute conversation with AI therapist (Condition 1)</li>
-            <li><strong>Phase B</strong> &mdash; 15-minute conversation with AI therapist (Condition 2)</li>
-            <li><strong>Questionnaires</strong> &mdash; Short surveys after each phase comparing your experience</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Your Data &amp; Privacy</h2>
-        <p>All data is collected anonymously via a randomly generated participant ID. Conversation logs and questionnaire responses are stored securely and cannot be linked to your identity. You can withdraw at any time during or after the study by providing your participant ID.</p>
-        <p>Full details are in the Participant Information Sheet below.</p>
-    </section>
-
-    <section>
-        <h2>Study Documents</h2>
-        <p>Please read both documents before deciding to participate:</p>
-        <div class="docs-grid">
-            <a href="PIS_Lulu_Liu.pdf" class="doc-card" target="_blank">
-                <span class="doc-icon">&#128196;</span>
-                <div>
-                    <div class="doc-label">Participant Information Sheet</div>
-                    <div class="doc-sub">Full study details &middot; PDF</div>
+        <section>
+            <h2>What's Involved</h2>
+            <div class="detail-grid">
+                <div class="detail-item">
+                    <div class="label">Duration</div>
+                    <div class="value">~45 minutes</div>
                 </div>
-            </a>
-            <a href="CF_Lulu_Liu.pdf" class="doc-card" target="_blank">
-                <span class="doc-icon">&#9997;</span>
-                <div>
-                    <div class="doc-label">Consent Form</div>
-                    <div class="doc-sub">Sign &amp; return to participate &middot; PDF</div>
+                <div class="detail-item">
+                    <div class="label">Format</div>
+                    <div class="value">Online, text-based</div>
                 </div>
+                <div class="detail-item">
+                    <div class="label">Compensation</div>
+                    <div class="value">Voluntary (no payment)</div>
+                </div>
+                <div class="detail-item">
+                    <div class="label">Eligibility</div>
+                    <div class="value">18+ years, fluent English</div>
+                </div>
+            </div>
+            <p>The study has three parts:</p>
+            <ul>
+                <li><strong>Phase A</strong> &mdash; 15-minute conversation with AI therapist (Condition 1)</li>
+                <li><strong>Phase B</strong> &mdash; 15-minute conversation with AI therapist (Condition 2)</li>
+                <li><strong>Questionnaires</strong> &mdash; Short surveys after each phase comparing your experience
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Your Data &amp; Privacy</h2>
+            <p>All data is collected anonymously via a generated participant ID. Conversation logs are NOT stored, and
+                questionnaire responses are stored securely and cannot be linked to your identity. You can withdraw at
+                any time during the study by contacting the researcher at s2338046@ed.ac.uk.</p>
+            <p>Full details are in the Participant Information Sheet below.</p>
+        </section>
+
+        <section>
+            <h2>Study Documents</h2>
+            <p>Please read both documents before deciding to participate:</p>
+            <div class="docs-grid">
+                <a href="PIS_Lulu_Liu.pdf" class="doc-card" target="_blank">
+                    <span class="doc-icon">&#128196;</span>
+                    <div>
+                        <div class="doc-label">Participant Information Sheet</div>
+                        <div class="doc-sub">Full study details &middot; PDF</div>
+                    </div>
+                </a>
+                <a href="CF_Lulu_Liu.pdf" class="doc-card" target="_blank">
+                    <span class="doc-icon">&#9997;</span>
+                    <div>
+                        <div class="doc-label">Consent Form</div>
+                        <div class="doc-sub">Sign &amp; return to participate &middot; PDF</div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h2>Interested in Participating?</h2>
+            <p>Download and sign the consent form above, then email it to the researcher. You'll receive the study link
+                and access code within 24 hours.</p>
+            <a href="mailto:s2338046@ed.ac.uk?subject=Study%20Participation%20%E2%80%93%20IM%20Feedback%20in%20AI%20Narrative%20Therapy"
+                class="cta-email">
+                Email: s2338046@ed.ac.uk
             </a>
-        </div>
-    </section>
+        </section>
 
-    <section class="cta-section">
-        <h2>Interested in Participating?</h2>
-        <p>Download and sign the consent form above, then email it to the researcher. You'll receive the study link and access code within 24 hours.</p>
-        <a href="mailto:s2338046@ed.ac.uk?subject=Study%20Participation%20%E2%80%93%20IM%20Feedback%20in%20AI%20Narrative%20Therapy" class="cta-email">
-            Email: s2338046@ed.ac.uk
-        </a>
-    </section>
+        <section>
+            <h2>Research Team</h2>
+            <p><strong>Researcher:</strong> Lulu Liu (Honours Dissertation, School of Informatics)</p>
+            <p><strong>Supervisor:</strong> Dr. Pavlos Andreadis</p>
+            <p><strong>Ethics Reference:</strong> 372312</p>
+            <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-light);">
+                If you have questions about the study, contact
+                <a href="mailto:s2338046@ed.ac.uk" style="color: var(--accent);">s2338046@ed.ac.uk</a>.
+                To raise a concern about the conduct of this research, contact the
+                School of Informatics Ethics Officer at
+                <a href="mailto:inf-ethics@inf.ed.ac.uk" style="color: var(--accent);">inf-ethics@inf.ed.ac.uk</a>.
+            </p>
+        </section>
+    </main>
 
-    <section>
-        <h2>Research Team</h2>
-        <p><strong>Researcher:</strong> Lulu Liu (Honours Dissertation, School of Informatics)</p>
-        <p><strong>Supervisor:</strong> Dr. Pavlos Andreadis</p>
-        <p><strong>Ethics Reference:</strong> 372312</p>
-        <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-light);">
-            If you have questions about the study, contact
-            <a href="mailto:s2338046@ed.ac.uk" style="color: var(--accent);">s2338046@ed.ac.uk</a>.
-            To raise a concern about the conduct of this research, contact the
-            School of Informatics Ethics Officer at
-            <a href="mailto:inf-ethics@inf.ed.ac.uk" style="color: var(--accent);">inf-ethics@inf.ed.ac.uk</a>.
-        </p>
-    </section>
-</main>
-
-<footer>
-    <p>&copy; 2026 Lulu Liu &middot; University of Edinburgh, School of Informatics</p>
-</footer>
+    <footer>
+        <p>&copy; 2026 Lulu Liu &middot; University of Edinburgh, School of Informatics</p>
+    </footer>
 
 </body>
+
 </html>
